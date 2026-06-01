@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ambition Edge | Business Transformation Consultancy in Calgary & Worldwide</title>
+<meta name="description" content="For founders and owners of service-based businesses whose teams are working hard but whose numbers won't move. Ambition Edge is a private business transformation practice based in Calgary, working worldwide." />
+
+<!-- ============================================================
+     EDIT-ME (Sameera)
+     • Hero background: search "HERO BACKGROUND" — instructions to add a real video.
+     • Email: contactambitionedge@gmail.com (replace-all)
+     • Colors: change CSS variables in :root.
+     • Stock images: each <img src="https://images.unsplash.com..."> is a
+       placeholder — swap any URL for your own photo file in this folder.
+     ============================================================ -->
+
+<link rel="icon" type="image/png" href="Ambition Edge Logo (6).png" />
+<link rel="apple-touch-icon" href="Ambition Edge Logo (6).png" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --forest:#0B3D2E;
+    --forest-deep:#072920;
+    --forest-soft:#14513F;
+    --ivory:#F8F5EE;
+    --cream:#EFE9DA;
+    --gold:#C9A961;
+    --gold-deep:#A8893F;
+    --gold-soft:#E8D9B0;
+    --ink:#0F0F0F;
+    --muted:#6B6B6B;
+    --line:rgba(11,61,46,0.08);
+    --line-strong:rgba(11,61,46,0.18);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  section[id]{scroll-margin-top:110px}
+  body{font-family:'Inter',sans-serif;background:var(--ivory);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  h1,h2,h3,h4{font-family:'Fraunces',serif;font-weight:400;letter-spacing:-0.02em;line-height:1.05;color:var(--forest)}
+  h1{font-size:clamp(2.6rem,6.4vw,5.6rem);font-weight:300}
+  h2{font-size:clamp(2rem,4.2vw,3.6rem);font-weight:400}
+  h3{font-size:clamp(1.3rem,2vw,1.75rem);font-weight:500}
+  p{color:var(--muted);font-weight:400}
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%;display:block}
+  .wrap{max-width:1280px;margin:0 auto;padding:0 32px}
+  @media(max-width:640px){.wrap{padding:0 20px}}
+
+  /* ============ NAV (Parvis-style: clean, small, top-left) ============ */
+  nav.top{position:absolute;top:0;left:0;right:0;z-index:50;padding:24px 0}
+  nav.top.scrolled{position:fixed;background:rgba(248,245,238,.94);backdrop-filter:blur(20px);border-bottom:1px solid var(--line);padding:14px 0;animation:slideDown .3s ease}
+  @keyframes slideDown{from{transform:translateY(-100%)}to{transform:translateY(0)}}
+  nav.top .row{display:flex;align-items:center;justify-content:space-between;gap:24px}
+  .brand{display:flex;align-items:center}
+  .brand .logo{height:52px;width:auto;transition:opacity .2s}
+  .brand:hover .logo{opacity:.85}
+  .nav-links{display:flex;gap:36px;font-size:.93rem;color:#fff;font-weight:400;letter-spacing:.01em}
+  nav.top.scrolled .nav-links{color:var(--forest)}
+  .nav-links a{position:relative;padding:6px 0;transition:opacity .2s}
+  .nav-links a:hover{opacity:.7}
+  .nav-actions{display:flex;align-items:center;gap:14px}
+  .login-link{color:#fff;font-size:.93rem;font-weight:400;padding:6px 0}
+  nav.top.scrolled .login-link{color:var(--forest)}
+  .btn{display:inline-flex;align-items:center;gap:8px;padding:11px 20px;background:var(--gold);color:var(--forest-deep);border-radius:6px;font-weight:500;font-size:.9rem;border:none;cursor:pointer;font-family:inherit;transition:all .2s ease;letter-spacing:.01em}
+  .btn:hover{background:var(--gold-deep);color:#fff;transform:translateY(-1px)}
+  .btn-dark{background:var(--forest);color:var(--ivory)}
+  .btn-dark:hover{background:var(--forest-deep);color:#fff}
+  .btn-ghost{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.4)}
+  nav.top.scrolled .btn-ghost{color:var(--forest);border-color:var(--line-strong)}
+  .btn-ghost:hover{background:#fff;color:var(--forest);border-color:#fff}
+  .btn-lg{padding:15px 28px;font-size:.95rem}
+  .menu-toggle{display:none;background:transparent;border:none;color:#fff;cursor:pointer;font-size:1.4rem}
+  nav.top.scrolled .menu-toggle{color:var(--forest)}
+  @media(max-width:880px){.nav-links{display:none}.menu-toggle{display:block}}
+
+  /* ============ HERO (full-bleed video + overlay) ============ */
+  .hero{position:relative;min-height:100vh;display:flex;align-items:center;color:#fff;overflow:hidden}
+  .hero-bg{position:absolute;inset:0;z-index:0;overflow:hidden}
+  .hero-bg video, .hero-bg img{width:100%;height:100%;object-fit:cover}
+  .hero-bg img{animation:kenburns 26s ease-in-out infinite alternate}
+  @keyframes kenburns{from{transform:scale(1)}to{transform:scale(1.14)}}
+  .hero-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(7,41,32,.78) 0%,rgba(11,61,46,.55) 60%,rgba(0,0,0,.65) 100%);z-index:1}
+  .hero-content{position:relative;z-index:2;width:100%;padding:160px 0 120px;text-align:center}
+  .hero-kicker{display:inline-block;font-size:.8rem;font-weight:500;color:var(--gold);text-transform:uppercase;letter-spacing:.22em;margin-bottom:22px}
+  .hero h1{color:#fff;max-width:980px;margin:0 auto 28px}
+  .hero h1 em{color:var(--gold);font-style:italic;font-family:'Fraunces',serif;font-weight:300}
+  .hero .lead{font-size:clamp(1.05rem,1.4vw,1.25rem);color:rgba(255,255,255,.85);max-width:660px;margin:0 auto 42px;font-weight:300;line-height:1.55}
+  .hero-cta{display:flex;gap:14px;flex-wrap:wrap;align-items:center;justify-content:center}
+  .hero-stat{margin-top:72px;display:flex;gap:56px;justify-content:center;flex-wrap:wrap;color:#fff;text-align:center}
+  @media(max-width:560px){.hero-stat{gap:32px;margin-top:52px}}
+  .hero-stat .num{font-family:'Fraunces',serif;font-size:2.4rem;font-weight:300;color:var(--gold);line-height:1}
+  .hero-stat .lbl{font-size:.78rem;color:rgba(255,255,255,.7);text-transform:uppercase;letter-spacing:.12em;margin-top:6px}
+  .scroll-hint{display:none;position:absolute;bottom:32px;left:50%;transform:translateX(-50%);z-index:2;color:rgba(255,255,255,.6);font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;flex-direction:column;align-items:center;gap:10px;animation:pulse 2.5s ease-in-out infinite}
+  @keyframes pulse{0%,100%{opacity:.5;transform:translate(-50%,0)}50%{opacity:1;transform:translate(-50%,8px)}}
+  .scroll-hint::after{content:'';width:1px;height:32px;background:rgba(255,255,255,.5)}
+
+  /* ============ MISSION ============ */
+  .mission{padding:140px 0 80px;text-align:center}
+  .mission .eyebrow{font-size:.78rem;font-weight:500;color:var(--gold-deep);text-transform:uppercase;letter-spacing:.18em;margin-bottom:24px;display:block}
+  .mission h2{max-width:980px;margin:0 auto 28px}
+  .mission h2 strong{color:var(--gold-deep);font-weight:500;font-style:italic}
+  .mission p.lead{font-size:1.18rem;color:#3a3a3a;max-width:760px;margin:0 auto;font-weight:300;line-height:1.6}
+
+  /* ============ WHO THIS IS FOR ============ */
+  .who-for{padding:80px 0 100px;background:var(--cream)}
+  .who-for .eyebrow{font-size:.78rem;font-weight:500;color:var(--gold-deep);text-transform:uppercase;letter-spacing:.18em;margin-bottom:22px;display:block}
+  .who-for h2{max-width:880px;margin-bottom:52px}
+  .who-for h2 em{color:var(--gold-deep);font-style:italic;font-weight:400}
+  .pain-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px 32px}
+  @media(max-width:760px){.pain-grid{grid-template-columns:1fr}}
+  .pain{background:var(--ivory);border-left:3px solid var(--gold);padding:22px 26px;font-size:1.02rem;color:#3a3a3a;line-height:1.6;border-radius:0 10px 10px 0;font-weight:400}
+
+  /* ============ TABS (A.R.I.F. — Parvis-style) ============ */
+  .tabs-section{padding:80px 0 140px}
+  .tabs-nav{display:flex;gap:0;border-bottom:1px solid var(--line);margin-bottom:64px;overflow-x:auto;scrollbar-width:none}
+  .tabs-nav::-webkit-scrollbar{display:none}
+  .tab-btn{background:transparent;border:none;padding:22px 0;margin-right:48px;color:var(--muted);font-family:'Fraunces',serif;font-size:1.15rem;font-weight:400;cursor:pointer;position:relative;transition:color .2s;white-space:nowrap;letter-spacing:-0.01em}
+  .tab-btn:hover{color:var(--forest)}
+  .tab-btn.active{color:var(--forest)}
+  .tab-btn.active::after{content:'';position:absolute;bottom:-1px;left:0;right:0;height:2px;background:var(--gold)}
+  .tab-letter{font-size:.7rem;font-weight:600;color:var(--gold-deep);letter-spacing:.18em;text-transform:uppercase;margin-right:8px;vertical-align:middle}
+  .tab-panels{position:relative;min-height:480px}
+  .tab-panel{display:none;grid-template-columns:1fr 1.05fr;gap:80px;align-items:center;animation:fadeIn .4s ease}
+  .tab-panel.active{display:grid}
+  @keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+  @media(max-width:880px){.tab-panel{grid-template-columns:1fr;gap:36px}}
+  .tab-panel h3{font-size:clamp(1.6rem,2.6vw,2.4rem);font-weight:400;color:var(--forest);margin-bottom:20px;letter-spacing:-0.02em}
+  .tab-panel p{font-size:1.05rem;color:#4a4a4a;line-height:1.7;margin-bottom:22px;font-weight:300}
+  .tab-panel ul{list-style:none;margin-bottom:30px}
+  .tab-panel ul li{padding:8px 0;padding-left:24px;position:relative;font-size:.98rem;color:#3a3a3a}
+  .tab-panel ul li::before{content:'';position:absolute;left:0;top:18px;width:10px;height:1px;background:var(--gold)}
+  .tab-image{position:relative;border-radius:14px;overflow:hidden;aspect-ratio:4/3;background:var(--cream)}
+  .tab-image img{width:100%;height:100%;object-fit:cover}
+
+  /* ============ PILLARS (4-column Parvis style) ============ */
+  .pillars{padding:120px 0;background:var(--cream)}
+  .pillars-head{max-width:780px;margin-bottom:64px}
+  .pillars-head .eyebrow{font-size:.78rem;font-weight:500;color:var(--gold-deep);text-transform:uppercase;letter-spacing:.18em;margin-bottom:20px;display:block}
+  .pillars-head h2{margin-bottom:20px}
+  .pillar-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:48px}
+  @media(max-width:980px){.pillar-grid{grid-template-columns:repeat(2,1fr);gap:40px}}
+  @media(max-width:560px){.pillar-grid{grid-template-columns:1fr}}
+  .pillar{position:relative;padding-top:32px;border-top:1px solid var(--line-strong)}
+  .pillar .num{position:absolute;top:-12px;left:0;background:var(--cream);padding-right:14px;font-family:'Fraunces',serif;font-size:.85rem;color:var(--gold-deep);letter-spacing:.1em}
+  .pillar h4{font-family:'Fraunces',serif;font-size:1.35rem;font-weight:500;color:var(--forest);margin-bottom:12px;letter-spacing:-0.01em}
+  .pillar p{font-size:.96rem;color:#4a4a4a;line-height:1.65;font-weight:400}
+
+  /* ============ FOUNDER FEATURE ============ */
+  .founder{padding:140px 0}
+  .founder-grid{display:grid;grid-template-columns:.95fr 1fr;gap:80px;align-items:center}
+  @media(max-width:880px){.founder-grid{grid-template-columns:1fr;gap:48px}}
+  .founder-image{position:relative;border-radius:14px;overflow:hidden;aspect-ratio:4/5;background:var(--cream)}
+  .founder-image img{width:100%;height:100%;object-fit:cover}
+  .founder-image::after{content:'';position:absolute;bottom:-30px;right:-30px;width:140px;height:140px;background:var(--gold);border-radius:14px;z-index:-1;opacity:.4}
+  .founder-content .eyebrow{font-size:.78rem;font-weight:500;color:var(--gold-deep);text-transform:uppercase;letter-spacing:.18em;margin-bottom:20px;display:block}
+  .founder-content h2{margin-bottom:24px}
+  .founder-content h2 em{color:var(--gold-deep);font-style:italic;font-weight:400}
+  .founder-content p{font-size:1.05rem;color:#3a3a3a;line-height:1.7;margin-bottom:18px;font-weight:300}
+  .credentials{display:flex;flex-wrap:wrap;gap:10px;margin:30px 0}
+  .cred-chip{padding:6px 14px;background:rgba(11,61,46,.06);border:1px solid var(--line);border-radius:100px;font-size:.82rem;color:var(--forest);font-weight:500}
+
+  /* ============ MISSION & VALUES ============ */
+  .values{padding:140px 0;background:var(--cream)}
+  .values-mission{max-width:880px;margin:0 auto 76px;text-align:center}
+  .values-mission .eyebrow{font-size:.78rem;font-weight:500;color:var(--gold-deep);text-transform:uppercase;letter-spacing:.18em;margin-bottom:22px;display:block}
+  .values-mission h2{margin-bottom:26px}
+  .values-mission h2 em{color:var(--gold-deep);font-style:italic;font-weight:400}
+  .values-mission p{font-size:1.15rem;color:#3a3a3a;font-weight:300;line-height:1.7;max-width:720px;margin:0 auto}
+  .values-attrib{margin-top:26px;font-family:'Fraunces',serif;font-style:italic;color:var(--forest);font-size:1rem}
+  .values-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px}
+  @media(max-width:760px){.values-grid{grid-template-columns:1fr}}
+  .value-card{background:var(--ivory);border:1px solid var(--line);border-radius:14px;padding:38px 36px;transition:all .3s}
+  .value-card:hover{transform:translateY(-4px);box-shadow:0 20px 44px -18px rgba(11,61,46,.18)}
+  .value-card .v-num{font-family:'Fraunces',serif;font-size:.85rem;color:var(--gold-deep);letter-spacing:.12em;margin-bottom:16px;display:block}
+  .value-card h4{font-family:'Fraunces',serif;font-size:1.4rem;font-weight:500;color:var(--forest);margin-bottom:12px;letter-spacing:-0.01em}
+  .value-card p{font-size:1rem;color:#4a4a4a;line-height:1.7;font-weight:400}
+
+  /* ============ WAYS TO WORK (Parvis "Ways to Invest") ============ */
+  .ways{padding:140px 0;background:var(--forest);color:var(--ivory)}
+  .ways-head{max-width:820px;margin-bottom:56px}
+  .ways-head .eyebrow{font-size:.78rem;font-weight:500;color:var(--gold);text-transform:uppercase;letter-spacing:.18em;margin-bottom:20px;display:block}
+  .ways-head h2{color:var(--ivory)}
+  .ways-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(248,245,238,.12)}
+  @media(max-width:980px){.ways-grid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:560px){.ways-grid{grid-template-columns:1fr}}
+  .way{padding:40px 32px;background:var(--forest);transition:background .3s}
+  .way:hover{background:var(--forest-soft)}
+  .way .num{font-family:'Fraunces',serif;font-size:.85rem;color:var(--gold);letter-spacing:.1em;margin-bottom:18px;display:block}
+  .way h4{font-family:'Fraunces',serif;font-size:1.3rem;font-weight:500;color:var(--ivory);margin-bottom:14px;letter-spacing:-0.01em}
+  .way p{font-size:.94rem;color:rgba(248,245,238,.7);line-height:1.6;margin-bottom:20px;font-weight:300}
+  .way a{color:var(--gold);font-size:.88rem;font-weight:500;letter-spacing:.02em;border-bottom:1px solid transparent;transition:border-color .2s}
+  .way a:hover{border-color:var(--gold)}
+
+  /* ============ INSIGHTS (blog tiles) ============ */
+  .insights{padding:140px 0}
+  .insights-head{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:56px;flex-wrap:wrap;gap:20px}
+  .insights-head .eyebrow{font-size:.78rem;font-weight:500;color:var(--gold-deep);text-transform:uppercase;letter-spacing:.18em;margin-bottom:14px;display:block}
+  .insights-head h2{margin-bottom:0}
+  .read-more-link{color:var(--forest);font-weight:500;font-size:.92rem;border-bottom:1px solid var(--gold);padding-bottom:3px}
+  .insights-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
+  @media(max-width:980px){.insights-grid{grid-template-columns:1fr 1fr}}
+  @media(max-width:640px){.insights-grid{grid-template-columns:1fr}}
+  .insight-card{display:block;background:#fff;border-radius:14px;overflow:hidden;border:1px solid var(--line);transition:all .3s;cursor:pointer;text-decoration:none;color:inherit}
+  .insight-card:hover{transform:translateY(-6px);box-shadow:0 24px 48px -16px rgba(11,61,46,.15)}
+  .insight-img{aspect-ratio:16/10;overflow:hidden}
+  .insight-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+  .insight-card:hover .insight-img img{transform:scale(1.04)}
+  .insight-body{padding:26px}
+  .insight-meta{font-size:.78rem;color:var(--muted);letter-spacing:.06em;text-transform:uppercase;margin-bottom:12px}
+  .insight-card h3{font-size:1.2rem;font-weight:500;line-height:1.3;margin-bottom:10px;color:var(--forest)}
+  .insight-card p{font-size:.92rem;line-height:1.55;color:#4a4a4a;font-weight:400}
+
+  /* ============ NEWSLETTER ============ */
+  .newsletter{padding:100px 0;background:var(--cream);text-align:center}
+  .newsletter h2{margin-bottom:18px;max-width:680px;margin-left:auto;margin-right:auto}
+  .newsletter p{font-size:1.05rem;color:#4a4a4a;max-width:560px;margin:0 auto 32px;font-weight:300}
+  .nl-form{display:flex;max-width:480px;margin:0 auto;gap:0;background:#fff;border-radius:8px;padding:6px;box-shadow:0 8px 30px -8px rgba(11,61,46,.15);border:1px solid var(--line)}
+  .nl-form input{flex:1;border:none;outline:none;padding:14px 18px;font-family:inherit;font-size:.96rem;background:transparent;color:var(--ink)}
+  .nl-form button{border:none;background:var(--forest);color:var(--ivory);padding:12px 24px;border-radius:6px;font-family:inherit;font-size:.92rem;font-weight:500;cursor:pointer;transition:background .2s}
+  .nl-form button:hover{background:var(--forest-deep)}
+
+  /* ============ FAQ ============ */
+  .faq{padding:120px 0}
+  .faq-grid{display:grid;grid-template-columns:.6fr 1fr;gap:80px;align-items:flex-start}
+  @media(max-width:880px){.faq-grid{grid-template-columns:1fr;gap:40px}}
+  .faq-side h2{margin-bottom:18px}
+  .faq-side p{font-size:1rem;line-height:1.6;color:var(--muted)}
+  .faq-side a{color:var(--forest);text-decoration:underline}
+  details{border-bottom:1px solid var(--line-strong);padding:0;transition:all .3s}
+  details:first-child{border-top:1px solid var(--line-strong)}
+  summary{padding:24px 0;cursor:pointer;font-family:'Fraunces',serif;font-weight:500;color:var(--forest);font-size:1.1rem;display:flex;justify-content:space-between;align-items:center;list-style:none;gap:24px}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:'+';font-size:1.6rem;color:var(--gold-deep);font-weight:300;transition:transform .3s;font-family:'Inter',sans-serif}
+  details[open] summary::after{transform:rotate(45deg)}
+  details > div{padding:0 0 24px;color:#4a4a4a;font-size:.98rem;line-height:1.7;font-weight:400}
+
+  /* ============ FINAL CTA ============ */
+  .final-cta{padding:160px 0;background:var(--forest-deep);color:var(--ivory);text-align:center;position:relative;overflow:hidden}
+  .final-cta::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 50% 30%,rgba(201,169,97,.15),transparent 60%);pointer-events:none}
+  .final-cta h2{color:var(--ivory);max-width:820px;margin:0 auto 30px;position:relative;z-index:1}
+  .final-cta h2 em{color:var(--gold);font-style:italic;font-weight:300}
+  .final-cta p{color:rgba(248,245,238,.75);font-size:1.1rem;max-width:580px;margin:0 auto 40px;font-weight:300;position:relative;z-index:1}
+  .final-cta .btn{position:relative;z-index:1}
+
+  /* ============ FOOTER (Parvis-style) ============ */
+  footer{background:var(--forest-deep);color:var(--ivory);padding:80px 0 30px;border-top:1px solid rgba(248,245,238,.1)}
+  .foot-top{display:grid;grid-template-columns:1.8fr 1fr 1fr 1fr;gap:48px;padding-bottom:60px;border-bottom:1px solid rgba(248,245,238,.12);margin-bottom:32px}
+  @media(max-width:880px){.foot-top{grid-template-columns:1fr 1fr;gap:36px}}
+  .foot-brand .logo{height:60px;width:auto;margin-bottom:24px}
+  .foot-brand p{color:rgba(248,245,238,.7);font-size:.92rem;max-width:320px;line-height:1.6;margin-bottom:24px;font-weight:300}
+  .foot-cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:24px}
+  .foot-socials{display:flex;gap:14px}
+  .foot-socials a{width:36px;height:36px;border-radius:50%;background:rgba(248,245,238,.08);display:grid;place-items:center;transition:all .25s;color:var(--ivory)}
+  .foot-socials a:hover{background:var(--gold);color:var(--forest-deep)}
+  .foot-socials svg{width:16px;height:16px}
+  footer h4{color:var(--gold);font-size:.78rem;text-transform:uppercase;letter-spacing:.14em;margin-bottom:20px;font-weight:600}
+  footer ul{list-style:none}
+  footer li{padding:6px 0}
+  footer a{color:rgba(248,245,238,.72);font-size:.92rem;transition:color .2s;font-weight:300}
+  footer a:hover{color:var(--gold)}
+  .foot-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;color:rgba(248,245,238,.5);font-size:.82rem;padding-top:14px}
+  .foot-disclosure{font-size:.78rem;color:rgba(248,245,238,.5);max-width:920px;line-height:1.6;margin-top:24px;font-weight:300}
+</style>
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<nav class="top" id="topnav">
+  <div class="wrap row">
+    <a href="home.html" class="brand">
+      <!-- White-element logo over dark hero; swaps to green-element logo when nav turns ivory -->
+      <img class="logo" id="navLogo" src="Ambition Edge Logo (6).png" alt="Ambition Edge" />
+    </a>
+    <div class="nav-links">
+      <a href="home.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="#method">The Method</a>
+      <a href="#values">Values</a>
+      <a href="book.html">Contact</a>
+    </div>
+    <div class="nav-actions">
+      <a href="book.html" class="btn btn-lg">Book a Session</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="hero-bg">
+    <!-- ============================================================
+         HERO BACKGROUND — your uploaded mountain-climber video.
+         To swap it: replace hero-video.mp4 in this folder with another .mp4.
+         The <img> is a still fallback shown if the video can't load.
+         ============================================================ -->
+    <video autoplay muted loop playsinline
+           poster="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=2400&q=85&auto=format&fit=crop">
+      <source src="hero-video.mp4" type="video/mp4" />
+      <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=2400&q=85&auto=format&fit=crop" alt="" />
+    </video>
+  </div>
+  <div class="hero-overlay"></div>
+  <div class="wrap hero-content">
+    <span class="hero-kicker">Your next move starts here</span>
+    <h1>When the way you used to run your business <em>isn't working anymore.</em></h1>
+    <p class="lead">For founders and owners whose teams are working harder than ever, yet the numbers still won't move. Effort is rarely the problem. Strategy, systems, and the small leaks in between usually are. We help you find where the work is being lost, rebuild what is broken, and stay alongside you until the numbers finally move.</p>
+    <div class="hero-cta">
+      <a href="book.html" class="btn btn-lg">Book a Diagnostic Session →</a>
+      <a href="services.html" class="btn btn-ghost btn-lg">Explore Services</a>
+    </div>
+    <div class="hero-stat">
+      <div><div class="num">11mo</div><div class="lbl">60 → 150 daily calls</div></div>
+      <div><div class="num">+20%</div><div class="lbl">Revenue lift delivered</div></div>
+      <div><div class="num">90%</div><div class="lbl">NPS maintained</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MISSION ============ -->
+<section class="mission">
+  <div class="wrap">
+    <span class="eyebrow">Where ambition meets execution</span>
+    <h2>The strategy big companies pay millions for, <strong>brought within reach of the service-based businesses that need it most.</strong></h2>
+    <p class="lead">Clinics, med spas, salons, restaurants, hospitality groups, professional services, real estate teams, and other service businesses where the customer experience and the team are the product. Based in Calgary, working with owners worldwide. Behind every engagement is 15 years of hands-on operating experience and a careful, structured way of working.</p>
+  </div>
+</section>
+
+<!-- ============ WHO THIS IS FOR ============ -->
+<section class="who-for">
+  <div class="wrap">
+    <span class="eyebrow">Who this is for</span>
+    <h2>If any of this sounds familiar, <em>this practice was built for you.</em></h2>
+    <div class="pain-grid">
+      <div class="pain">You know your business should be growing faster, but you cannot quite see why it isn't.</div>
+      <div class="pain">Your team is busy every day, yet the numbers refuse to move.</div>
+      <div class="pain">You have hired marketing help, HR help, or operations help, and the pieces still do not fit together.</div>
+      <div class="pain">You are running on instinct rather than strategy, and it is starting to cost you.</div>
+      <div class="pain">Your customers used to come back. They don't anymore, and you cannot quite put your finger on why.</div>
+      <div class="pain">You can feel the next level is reachable, but you cannot find a clean path to it.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TABS (A.R.I.F. METHOD) ============ -->
+<section class="tabs-section" id="method">
+  <div class="wrap">
+    <div class="tabs-nav">
+      <button class="tab-btn active" data-tab="0"><span class="tab-letter">A</span>Audit</button>
+      <button class="tab-btn" data-tab="1"><span class="tab-letter">R</span>Re-Engineer</button>
+      <button class="tab-btn" data-tab="2"><span class="tab-letter">I</span>Implement</button>
+      <button class="tab-btn" data-tab="3"><span class="tab-letter">F</span>Fortify</button>
+    </div>
+
+    <div class="tab-panels">
+      <div class="tab-panel active">
+        <div>
+          <h3>Diagnose with precision, not guesswork.</h3>
+          <p>Every engagement starts with a deep diagnostic across the four areas that genuinely move a business: people, strategy, marketing, and customer experience. That means looking honestly at the numbers, asking the questions that are easy to avoid, and being straight with you about what we find.</p>
+          <ul>
+            <li>Multi-question intake and discovery call framework</li>
+            <li>Live 90-minute audit session</li>
+            <li>Written diagnostic report within 48 hours</li>
+          </ul>
+          <a href="book.html" class="btn btn-dark">Start with an Audit →</a>
+        </div>
+        <div class="tab-image">
+          <img src="https://images.unsplash.com/photo-1543286386-713bdd548da4?w=1400&q=85&auto=format&fit=crop" alt="Performance charts and data on screen" />
+        </div>
+      </div>
+
+      <div class="tab-panel">
+        <div>
+          <h3>Co-design the future state, with measurable outcomes.</h3>
+          <p>This is where the plan takes shape. Rather than handing you a slide deck, we build a step-by-step plan together, with a clear owner for every action and goals you can confidently stand behind in front of your team, your partners, or anyone you answer to.</p>
+          <ul>
+            <li>A 90-day priority roadmap</li>
+            <li>Clear quarterly goals your team owns</li>
+            <li>A communication plan for your team and partners</li>
+          </ul>
+          <a href="services.html" class="btn btn-dark">See How We Plan →</a>
+        </div>
+        <div class="tab-image">
+          <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1400&q=85&auto=format&fit=crop" alt="Strategy planning session" />
+        </div>
+      </div>
+
+      <div class="tab-panel">
+        <div>
+          <h3>Execution with accountability that doesn't blink.</h3>
+          <p>A lot of consultants hand over a report and move on. We stay with you, running weekly working sessions, clearing the blockers that slow you down, and staying accountable for the results. You get a real partner, not just a project plan.</p>
+          <ul>
+            <li>Weekly working sessions with structured agendas</li>
+            <li>Async support between sessions (email + voice notes)</li>
+            <li>Real-time accountability dashboards</li>
+          </ul>
+          <a href="book.html" class="btn btn-dark">Get an Implementation Partner →</a>
+        </div>
+        <div class="tab-image">
+          <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=1400&q=85&auto=format&fit=crop" alt="Team executing strategy" />
+        </div>
+      </div>
+
+      <div class="tab-panel">
+        <div>
+          <h3>Lock in the gains so they last.</h3>
+          <p>The end goal is for you not to need us. We help you fortify the new way of working by building the habits, systems, and team capability that keep producing results long after our work together ends. Your business stays strong on its own.</p>
+          <ul>
+            <li>Coaching and capability-building for your team</li>
+            <li>A clear weekly and monthly rhythm to keep things on track</li>
+            <li>Alumni access to templates and toolkits you can keep using</li>
+          </ul>
+          <a href="services.html" class="btn btn-dark">Fortify Your Wins →</a>
+        </div>
+        <div class="tab-image">
+          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1400&q=85&auto=format&fit=crop" alt="Growth analytics dashboard" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PILLARS ============ -->
+<section class="pillars">
+  <div class="wrap">
+    <div class="pillars-head">
+      <span class="eyebrow">Why Ambition Edge</span>
+      <h2>An integral part of high-performing businesses.</h2>
+    </div>
+    <div class="pillar-grid">
+      <div class="pillar">
+        <span class="num">01</span>
+        <h4>Results from session one</h4>
+        <p>You don't wait three months to see value. Every diagnostic delivers clarity, priorities, and a written 30-day roadmap before you leave the call.</p>
+      </div>
+      <div class="pillar">
+        <span class="num">02</span>
+        <h4>A method, not a guess</h4>
+        <p>The same proven four-step framework runs every engagement, so you always know what to expect, what comes next, and why each step matters.</p>
+      </div>
+      <div class="pillar">
+        <span class="num">03</span>
+        <h4>Six areas, one trusted partner</h4>
+        <p>People, strategy, marketing, customer experience, leadership, and operations, all in one place. You won't have to juggle six different consultants who never speak to each other.</p>
+      </div>
+      <div class="pillar">
+        <span class="num">04</span>
+        <h4>Calgary roots, global reach</h4>
+        <p>Calgary clients have the option of in-person sessions, and clients anywhere in the world receive the same depth and quality of partnership. We take on a limited number of clients so each one gets our full attention.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOUNDER ============ -->
+<section class="founder">
+  <div class="wrap founder-grid">
+    <div class="founder-image">
+      <img src="founder.jpg" alt="Sameera Abdullah, Founder of Ambition Edge" />
+    </div>
+    <div class="founder-content">
+      <span class="eyebrow">Meet the Founder</span>
+      <h2>Built by an operator, <em>not a theorist.</em></h2>
+      <p>Sameera Abdullah is the founder of Ambition Edge. Over 15 years she has rebuilt marketing departments, founded HR functions from the ground up, and led customer experience transformations that produced measurable, repeatable lifts in revenue and retention.</p>
+      <p>Her work has taken daily inbound calls from 60 to 150 in just 11 months, grown annual sales from roughly $1.6 million to $4.4 million, cut employee turnover from 11% to 5% in two years, and maintained an NPS of 90% at scale.</p>
+      <p>Team building and people management are her absolute strengths, and she has developed proven frameworks for both that she brings into every engagement.</p>
+      <div class="credentials">
+        <span class="cred-chip">CHRA · 2024</span>
+        <span class="cred-chip">M&amp;A · Wharton</span>
+        <span class="cred-chip">New Ventures · MIT</span>
+        <span class="cred-chip">CMQ/OE</span>
+        <span class="cred-chip">CHRM</span>
+        <span class="cred-chip">MBA · Human Resources</span>
+        <span class="cred-chip">BBA · Marketing</span>
+      </div>
+      <a href="book.html" class="btn">Work With Sameera →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MISSION & VALUES ============ -->
+<section class="values" id="values">
+  <div class="wrap">
+    <div class="values-mission">
+      <span class="eyebrow">Our Mission &amp; Values</span>
+      <h2>Great businesses are built on talent and <em>scaled by strategy.</em></h2>
+      <p>We exist so that no business stays stuck because it's missing one of them. Ambition Edge brings talent and strategy together, and pours everything into making sure every client keeps moving forward. That is the whole reason this practice exists.</p>
+      <div class="values-attrib">Sameera Abdullah, Founder of Ambition Edge</div>
+    </div>
+    <div class="values-grid">
+      <div class="value-card">
+        <span class="v-num">01</span>
+        <h4>We grow, so you grow</h4>
+        <p>Growth and evolution are at the heart of who we are. We are always learning and raising our own standards, and we hold the same belief for you: there is always a next level, and we will help you reach it.</p>
+      </div>
+      <div class="value-card">
+        <span class="v-num">02</span>
+        <h4>Loyal, for the long run</h4>
+        <p>Loyalty matters deeply to us. When we take you on, we are genuinely committed to you and to your success. We stay in your corner, treat your wins as our own, and remain someone you can count on long after our work together ends.</p>
+      </div>
+      <div class="value-card">
+        <span class="v-num">03</span>
+        <h4>More value than expected</h4>
+        <p>Every client should walk away certain they received far more than they expected. We pour everything we have into your challenges and go beyond what was asked, because "good enough" has never been our standard.</p>
+      </div>
+      <div class="value-card">
+        <span class="v-num">04</span>
+        <h4>Honesty, always with care</h4>
+        <p>We tell you the truth, kindly and clearly, even when it is hard to hear. Real growth only happens when someone respects you enough to be honest, and that respect is something we will always give you.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WAYS TO WORK ============ -->
+<section class="ways">
+  <div class="wrap">
+    <div class="ways-head">
+      <span class="eyebrow">Ways to Work With Us</span>
+      <h2>From one session to <em style="color:var(--gold);font-style:italic">a full transformation partnership.</em></h2>
+    </div>
+    <div class="ways-grid">
+      <div class="way">
+        <span class="num">01</span>
+        <h4>Diagnostic Session</h4>
+        <p>A 90-minute audit across people, strategy, marketing, and CX. Walk out with a written 30-day roadmap.</p>
+        <a href="book.html">Book a Session →</a>
+      </div>
+      <div class="way">
+        <span class="num">02</span>
+        <h4>90-Day Transformation</h4>
+        <p>Audit, re-engineer, and implement together over 12 weeks. Designed to produce a measurable lift.</p>
+        <a href="services.html">See the Engagement →</a>
+      </div>
+      <div class="way">
+        <span class="num">03</span>
+        <h4>Strategic Retainer</h4>
+        <p>Ongoing monthly partnership. A fractional strategy partner on call for high-stakes decisions.</p>
+        <a href="services.html">Inquire About Retainer →</a>
+      </div>
+      <div class="way">
+        <span class="num">04</span>
+        <h4>Alumni &amp; Tools</h4>
+        <p>Self-paced toolkits and templates for clients building between engagements.</p>
+        <a href="services.html">Browse Products →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INSIGHTS ============ -->
+<section class="insights" id="insights">
+  <div class="wrap">
+    <div class="insights-head">
+      <div>
+        <span class="eyebrow">Ambition Edge Insights</span>
+        <h2>Field notes from the practice.</h2>
+      </div>
+      <a href="https://www.linkedin.com/in/sameera-abdullah-80aa6548/" target="_blank" class="read-more-link">Read more on LinkedIn →</a>
+    </div>
+    <div class="insights-grid">
+      <a class="insight-card" href="https://www.linkedin.com/in/sameera-abdullah-80aa6548/" target="_blank" rel="noopener">
+        <div class="insight-img"><img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=1200&q=85&auto=format&fit=crop" alt="" /></div>
+        <div class="insight-body">
+          <div class="insight-meta">Strategy · Read on LinkedIn</div>
+          <h3>Why most "strategy plans" fail before week three.</h3>
+          <p>The one thing that turns a slide deck into real, measurable change, and how the A.R.I.F. Method closes that gap.</p>
+        </div>
+      </a>
+      <a class="insight-card" href="https://www.linkedin.com/in/sameera-abdullah-80aa6548/" target="_blank" rel="noopener">
+        <div class="insight-img"><img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?w=1200&q=85&auto=format&fit=crop" alt="" /></div>
+        <div class="insight-body">
+          <div class="insight-meta">People &amp; Teams · Read on LinkedIn</div>
+          <h3>How to cut turnover from 11% to 5% without raising salaries.</h3>
+          <p>A field-tested playbook for service businesses where retention isn't a budget problem, it's a system problem.</p>
+        </div>
+      </a>
+      <a class="insight-card" href="https://www.linkedin.com/in/sameera-abdullah-80aa6548/" target="_blank" rel="noopener">
+        <div class="insight-img"><img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=85&auto=format&fit=crop" alt="" /></div>
+        <div class="insight-body">
+          <div class="insight-meta">Marketing · Read on LinkedIn</div>
+          <h3>From 60 to 150 daily calls in 11 months: a marketing rebuild.</h3>
+          <p>The diagnostic, the decisions that followed, and the step most owners quietly skip that holds their growth back.</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ NEWSLETTER ============ -->
+<section class="newsletter">
+  <div class="wrap">
+    <h2>Stay close to the practice.</h2>
+    <p>One short, useful note each month, with practical playbooks and the occasional behind-the-scenes look at a real engagement. Something you'll actually want to read.</p>
+    <form class="nl-form" action="mailto:contactambitionedge@gmail.com" method="POST">
+      <input type="email" name="email" placeholder="your@email.com" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="faq">
+  <div class="wrap faq-grid">
+    <div class="faq-side">
+      <h2>Common questions.</h2>
+      <p>If your question isn't answered here, just email <a href="mailto:contactambitionedge@gmail.com">contactambitionedge@gmail.com</a> and you'll hear back from me personally.</p>
+    </div>
+    <div>
+      <details open>
+        <summary>Is one session really enough to get real value?</summary>
+        <div>Yes. The Audit phase is built to give you clarity, priorities, and a real written plan within 90 minutes. Many clients put major changes into action that same week. If a deeper engagement makes sense, we'll talk about it. If not, you still leave with a clear roadmap you can use.</div>
+      </details>
+      <details>
+        <summary>How is this different from "business coaching"?</summary>
+        <div>Coaching mostly asks you questions and leaves the answers to you. Consulting brings you clear diagnoses, frameworks, and decisions. Ambition Edge delivers structured, evidence-based consulting through the A.R.I.F. Method™, with the warmth and personal accountability you'd expect from a private practice rather than a faceless firm.</div>
+      </details>
+      <details>
+        <summary>Do you work outside Calgary?</summary>
+        <div>Yes. Around half of Ambition Edge engagements are with clients outside Calgary. Calgary clients have the option of meeting in person, and everyone else receives the same depth and quality of partnership remotely.</div>
+      </details>
+      <details>
+        <summary>What's the guarantee?</summary>
+        <div>If you leave the diagnostic without at least one clear, valuable insight you can act on right away, the session is refunded. Our standard is simple: every client should be better off starting from the very first session.</div>
+      </details>
+      <details>
+        <summary>How quickly can we meet?</summary>
+        <div>Most sessions are booked within 5 to 10 business days of your application. There are a limited number of slots each month, so it's worth applying early. You'll receive a calendar link within one business day.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINAL CTA ============ -->
+<section class="final-cta">
+  <div class="wrap">
+    <h2>Let's build your next chapter <em>together.</em></h2>
+    <p>One session is all it takes to see whether Ambition Edge is the right partner for where you want to go next. Come with your real challenges, and leave with a clear plan to move forward.</p>
+    <a href="book.html" class="btn btn-lg">Book My A.R.I.F. Session →</a>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <img class="logo" src="Ambition Edge Logo (2).png" alt="Ambition Edge" />
+        <p>A business transformation and performance consultancy partnering with service-based businesses worldwide. Calgary, Alberta · SAAAH Limited.</p>
+        <div class="foot-cta-row">
+          <a href="book.html" class="btn">Book a Session →</a>
+        </div>
+        <div class="foot-socials">
+          <a href="https://www.linkedin.com/in/sameera-abdullah-80aa6548/" target="_blank" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+          <a href="mailto:contactambitionedge@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="book.html">Book a Session</a></li>
+          <li><a href="#method">The A.R.I.F. Method</a></li>
+          <li><a href="#values">Mission &amp; Values</a></li>
+          <li><a href="#insights">Insights</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:contactambitionedge@gmail.com">contactambitionedge@gmail.com</a></li>
+          <li><a href="tel:+14037965389">+1 403-796-5389</a></li>
+          <li>Calgary, AB · Canada</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+          <li>© <span id="yr"></span> SAAAH Limited</li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="foot-disclosure">Ambition Edge is a registered trade name of SAAAH Limited (Federal Corporation 1456848-6). The A.R.I.F. Method™ is a trademark of SAAAH Limited. Results referenced on this site reflect engagements completed by the founder in prior roles and current consulting practice; individual outcomes vary based on engagement scope and client execution.</p>
+
+    <div class="foot-bottom">
+      <div>© <span id="yr2"></span> Ambition Edge · All rights reserved.</div>
+      <div>Where ambition meets execution.</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Sticky nav on scroll — also swaps logo for contrast
+  const nav = document.getElementById('topnav');
+  const navLogo = document.getElementById('navLogo');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 80) {
+      nav.classList.add('scrolled');
+      navLogo.src = 'Ambition Edge Logo (2).png';   // green logo on ivory nav
+    } else {
+      nav.classList.remove('scrolled');
+      navLogo.src = 'Ambition Edge Logo (6).png';   // white logo over dark hero
+    }
+  });
+
+  // Tabs
+  const tabBtns = document.querySelectorAll('.tab-btn');
+  const tabPanels = document.querySelectorAll('.tab-panel');
+  tabBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const i = btn.dataset.tab;
+      tabBtns.forEach(b => b.classList.remove('active'));
+      tabPanels.forEach(p => p.classList.remove('active'));
+      btn.classList.add('active');
+      tabPanels[i].classList.add('active');
+    });
+  });
+
+  // Year
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  document.getElementById('yr2').textContent = new Date().getFullYear();
+
+  // Graceful image fallback — any failed stock image becomes a branded gradient block
+  document.querySelectorAll('img').forEach(img => {
+    img.addEventListener('error', () => {
+      img.style.visibility = 'hidden';
+      if (img.parentElement) {
+        img.parentElement.style.background =
+          'linear-gradient(135deg,#0B3D2E 0%,#14513F 60%,#072920 100%)';
+      }
+    });
+  });
+</script>
+</body>
+</html>

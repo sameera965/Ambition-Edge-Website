@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Book Your Ambition Edge Diagnostic | The A.R.I.F. Session</title>
+<meta name="description" content="Reserve your 90-minute Ambition Edge diagnostic. Calgary in-person or remote worldwide. Leave with a written plan, not just advice." />
+
+<!-- EDIT-ME: form action below — replace with Formspree/Calendly. Email: contactambitionedge@gmail.com -->
+
+<link rel="icon" type="image/png" href="Ambition Edge Logo (6).png" />
+<link rel="apple-touch-icon" href="Ambition Edge Logo (6).png" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --forest:#0B3D2E;--forest-deep:#072920;--forest-soft:#14513F;
+    --ivory:#F8F5EE;--cream:#EFE9DA;
+    --gold:#C9A961;--gold-deep:#A8893F;--gold-soft:#E8D9B0;
+    --ink:#0F0F0F;--muted:#6B6B6B;
+    --line:rgba(11,61,46,0.08);--line-strong:rgba(11,61,46,0.18);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:'Inter',sans-serif;background:var(--ivory);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  h1,h2,h3,h4{font-family:'Fraunces',serif;font-weight:400;letter-spacing:-0.02em;line-height:1.05;color:var(--forest)}
+  h1{font-size:clamp(2.4rem,5.6vw,4.6rem);font-weight:300}
+  h2{font-size:clamp(1.7rem,3.4vw,2.7rem);font-weight:400}
+  h3{font-size:clamp(1.15rem,1.7vw,1.4rem);font-weight:500}
+  p{color:var(--muted);font-weight:400}
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%;display:block}
+  .wrap{max-width:1280px;margin:0 auto;padding:0 32px}
+  @media(max-width:640px){.wrap{padding:0 20px}}
+
+  /* NAV */
+  nav.top{position:sticky;top:0;z-index:50;padding:20px 0;background:rgba(248,245,238,.94);backdrop-filter:blur(20px);border-bottom:1px solid var(--line)}
+  nav.top .row{display:flex;align-items:center;justify-content:space-between;gap:24px}
+  .brand .logo{height:52px;width:auto;transition:opacity .2s}
+  .brand:hover .logo{opacity:.85}
+  .nav-links{display:flex;gap:36px;font-size:.93rem;color:var(--forest);font-weight:400;letter-spacing:.01em}
+  .nav-links a{padding:6px 0;transition:opacity .2s}
+  .nav-links a:hover{opacity:.6}
+  .nav-links a.active{color:var(--gold-deep);position:relative}
+  .nav-links a.active::after{content:'';position:absolute;bottom:-2px;left:0;right:0;height:1px;background:var(--gold)}
+  .btn{display:inline-flex;align-items:center;gap:8px;padding:11px 20px;background:var(--gold);color:var(--forest-deep);border-radius:6px;font-weight:500;font-size:.9rem;border:none;cursor:pointer;font-family:inherit;transition:all .2s ease;letter-spacing:.01em}
+  .btn:hover{background:var(--gold-deep);color:#fff;transform:translateY(-1px)}
+  .btn-dark{background:var(--forest);color:var(--ivory)}
+  .btn-dark:hover{background:var(--forest-deep);color:#fff}
+  .btn-ghost{background:transparent;color:var(--forest);border:1px solid var(--line-strong)}
+  .btn-ghost:hover{background:var(--forest);color:var(--ivory)}
+  .btn-lg{padding:14px 26px;font-size:.95rem}
+  @media(max-width:880px){.nav-links{display:none}}
+
+  /* PAGE HEAD */
+  .page-head{position:relative;padding:130px 0 90px;overflow:hidden;background:var(--forest);color:#fff}
+  .page-head-bg{position:absolute;inset:0;z-index:0;opacity:.32}
+  .page-head-bg img{width:100%;height:100%;object-fit:cover}
+  .page-head-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(7,41,32,.86),rgba(11,61,46,.72));z-index:1}
+  .page-head-content{position:relative;z-index:2;max-width:840px}
+  .page-head .eyebrow{font-size:.78rem;font-weight:500;color:var(--gold);text-transform:uppercase;letter-spacing:.18em;margin-bottom:22px;display:block}
+  .page-head h1{color:#fff;margin-bottom:22px}
+  .page-head h1 em{color:var(--gold);font-style:italic;font-weight:300}
+  .page-head p.lead{font-size:1.16rem;color:rgba(255,255,255,.85);max-width:680px;font-weight:300;line-height:1.6}
+
+  /* BOOKING */
+  .booking{padding:100px 0}
+  .b-grid{display:grid;grid-template-columns:1.05fr .85fr;gap:56px;align-items:flex-start}
+  @media(max-width:980px){.b-grid{grid-template-columns:1fr;gap:36px}}
+
+  .form-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:48px}
+  @media(max-width:560px){.form-card{padding:32px 24px}}
+  .form-card h2{font-size:1.7rem;margin-bottom:10px}
+  .form-card .sub{font-size:.98rem;color:var(--muted);margin-bottom:32px;font-weight:300}
+  .grp{margin-bottom:22px}
+  .grp label{display:block;font-size:.84rem;font-weight:500;color:var(--forest);margin-bottom:8px;letter-spacing:.02em}
+  .grp label .opt{color:var(--muted);font-weight:400;font-size:.8rem;margin-left:6px}
+  .grp input,.grp textarea{width:100%;padding:13px 16px;border:1px solid var(--line-strong);border-radius:8px;font-family:inherit;font-size:.96rem;background:var(--ivory);color:var(--ink);transition:all .2s}
+  .grp input:focus,.grp textarea:focus{outline:none;border-color:var(--gold);background:#fff;box-shadow:0 0 0 4px rgba(201,169,97,.1)}
+  .grp textarea{resize:vertical;min-height:110px}
+  .row-2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  @media(max-width:560px){.row-2{grid-template-columns:1fr}}
+  .radio-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:6px}
+  @media(max-width:560px){.radio-grid{grid-template-columns:1fr}}
+  .radio-grid label{display:flex;align-items:center;gap:10px;padding:14px;border:1px solid var(--line-strong);border-radius:8px;cursor:pointer;font-weight:400;color:var(--forest);font-size:.92rem;background:var(--ivory);transition:all .2s}
+  .radio-grid input[type="radio"]{accent-color:var(--gold-deep)}
+  .radio-grid label:hover{border-color:var(--gold);background:#fff}
+  .submit-row{margin-top:30px}
+  .submit-row .btn{width:100%;justify-content:center;font-size:1rem;padding:16px}
+  .legal{font-size:.78rem;color:var(--muted);text-align:center;margin-top:14px;font-weight:300}
+  .legal a{color:var(--forest);text-decoration:underline}
+
+  /* SUMMARY */
+  .summary{position:sticky;top:100px}
+  @media(max-width:980px){.summary{position:static}}
+  .summary-card{background:var(--forest);color:var(--ivory);border-radius:16px;padding:40px;margin-bottom:20px}
+  .summary-card .tag{display:inline-block;font-size:.72rem;color:var(--gold);text-transform:uppercase;letter-spacing:.14em;margin-bottom:14px;font-weight:500}
+  .summary-card h3{color:var(--ivory);font-size:1.5rem;margin-bottom:8px}
+  .summary-card .sub{font-size:.92rem;color:rgba(248,245,238,.7);margin-bottom:24px;font-weight:300}
+  .price-line{padding:22px 0;border-top:1px solid rgba(248,245,238,.15);border-bottom:1px solid rgba(248,245,238,.15);margin-bottom:24px}
+  .price-line .num{font-family:'Fraunces',serif;font-size:2rem;font-weight:300;color:var(--ivory)}
+  .price-line .lbl{font-size:.84rem;color:rgba(248,245,238,.6)}
+  .check-list{list-style:none}
+  .check-list li{padding:8px 0;padding-left:24px;position:relative;font-size:.93rem;color:rgba(248,245,238,.88)}
+  .check-list li::before{content:'';position:absolute;left:0;top:15px;width:11px;height:1px;background:var(--gold)}
+  .guarantee{background:var(--cream);border-radius:16px;padding:28px;display:flex;gap:16px;align-items:flex-start;border:1px solid var(--line)}
+  .guarantee .seal{width:44px;height:44px;background:var(--gold);color:var(--forest-deep);border-radius:50%;display:grid;place-items:center;font-weight:700;flex-shrink:0;font-family:'Fraunces',serif}
+  .guarantee p{font-size:.9rem;color:var(--forest);margin:0;line-height:1.6}
+  .guarantee strong{color:var(--forest-deep);font-weight:600}
+
+  /* TRUST */
+  .trust{padding:60px 0;background:var(--cream)}
+  .trust-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:32px}
+  @media(max-width:780px){.trust-grid{grid-template-columns:repeat(2,1fr);gap:32px}}
+  .trust-item{text-align:center}
+  .trust-item .num{font-family:'Fraunces',serif;font-size:1.7rem;font-weight:300;color:var(--forest)}
+  .trust-item .lbl{font-size:.84rem;color:var(--muted);margin-top:4px;font-weight:300}
+
+  /* FAQ */
+  .faq{padding:120px 0}
+  .faq-grid{display:grid;grid-template-columns:.6fr 1fr;gap:80px;align-items:flex-start}
+  @media(max-width:880px){.faq-grid{grid-template-columns:1fr;gap:40px}}
+  .faq-side .eyebrow{font-size:.78rem;font-weight:500;color:var(--gold-deep);text-transform:uppercase;letter-spacing:.18em;margin-bottom:18px;display:block}
+  .faq-side h2{margin-bottom:18px}
+  .faq-side p{font-size:1rem;line-height:1.6;color:var(--muted)}
+  .faq-side a{color:var(--forest);text-decoration:underline}
+  details{border-bottom:1px solid var(--line-strong)}
+  details:first-child{border-top:1px solid var(--line-strong)}
+  summary{padding:24px 0;cursor:pointer;font-family:'Fraunces',serif;font-weight:500;color:var(--forest);font-size:1.1rem;display:flex;justify-content:space-between;align-items:center;list-style:none;gap:24px}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:'+';font-size:1.6rem;color:var(--gold-deep);font-weight:300;transition:transform .3s;font-family:'Inter',sans-serif}
+  details[open] summary::after{transform:rotate(45deg)}
+  details > div{padding:0 0 24px;color:#4a4a4a;font-size:.97rem;line-height:1.7}
+
+  /* FOOTER */
+  footer{background:var(--forest-deep);color:var(--ivory);padding:80px 0 30px;border-top:1px solid rgba(248,245,238,.1)}
+  .foot-top{display:grid;grid-template-columns:1.8fr 1fr 1fr 1fr;gap:48px;padding-bottom:60px;border-bottom:1px solid rgba(248,245,238,.12);margin-bottom:32px}
+  @media(max-width:880px){.foot-top{grid-template-columns:1fr 1fr;gap:36px}}
+  .foot-brand .logo{height:60px;width:auto;margin-bottom:24px}
+  .foot-brand p{color:rgba(248,245,238,.7);font-size:.92rem;max-width:320px;line-height:1.6;margin-bottom:24px;font-weight:300}
+  .foot-cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:24px}
+  .foot-socials{display:flex;gap:14px}
+  .foot-socials a{width:36px;height:36px;border-radius:50%;background:rgba(248,245,238,.08);display:grid;place-items:center;transition:all .25s;color:var(--ivory)}
+  .foot-socials a:hover{background:var(--gold);color:var(--forest-deep)}
+  .foot-socials svg{width:16px;height:16px}
+  footer h4{color:var(--gold);font-size:.78rem;text-transform:uppercase;letter-spacing:.14em;margin-bottom:20px;font-weight:600}
+  footer ul{list-style:none}
+  footer li{padding:6px 0}
+  footer a{color:rgba(248,245,238,.72);font-size:.92rem;transition:color .2s;font-weight:300}
+  footer a:hover{color:var(--gold)}
+  .foot-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;color:rgba(248,245,238,.5);font-size:.82rem;padding-top:14px}
+  .foot-disclosure{font-size:.78rem;color:rgba(248,245,238,.5);max-width:920px;line-height:1.6;margin-top:24px;font-weight:300}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="top">
+  <div class="wrap row">
+    <a href="home.html" class="brand">
+      <img class="logo" src="Ambition Edge Logo (2).png" alt="Ambition Edge" />
+    </a>
+    <div class="nav-links">
+      <a href="home.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="home.html#method">The Method</a>
+      <a href="book.html" class="active">Contact</a>
+    </div>
+    <a href="mailto:contactambitionedge@gmail.com" class="btn btn-lg">Email Us</a>
+  </div>
+</nav>
+
+<!-- PAGE HEAD -->
+<section class="page-head">
+  <div class="page-head-bg">
+    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=2400&q=85&auto=format&fit=crop" alt="" />
+  </div>
+  <div class="page-head-overlay"></div>
+  <div class="wrap page-head-content">
+    <span class="eyebrow">Limited slots each month</span>
+    <h1>Reserve your <em>A.R.I.F. session.</em></h1>
+    <p class="lead">90 minutes that turn ambition into a written plan, available in person in Calgary or remotely worldwide. You'll walk away with clarity, priorities, and a 30-day roadmap, guaranteed.</p>
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section class="booking">
+  <div class="wrap b-grid">
+
+    <!-- FORM -->
+    <div class="form-card">
+      <h2>Tell me about your business</h2>
+      <p class="sub">A short application that helps me show up to your session already prepped. You'll get a reply within one business day with a calendar link.</p>
+
+      <!-- EDIT-ME: replace action with your real handler (Formspree, etc.) -->
+      <form action="mailto:contactambitionedge@gmail.com" method="POST" enctype="text/plain">
+        <div class="row-2">
+          <div class="grp">
+            <label for="name">Full Name</label>
+            <input id="name" name="Name" type="text" required placeholder="Jane Doe">
+          </div>
+          <div class="grp">
+            <label for="email">Email</label>
+            <input id="email" name="Email" type="email" required placeholder="you@yourbusiness.com">
+          </div>
+        </div>
+        <div class="row-2">
+          <div class="grp">
+            <label for="company">Company / Business</label>
+            <input id="company" name="Company" type="text" placeholder="Your business">
+          </div>
+          <div class="grp">
+            <label for="role">Your Role</label>
+            <input id="role" name="Role" type="text" placeholder="Founder / Owner / CEO">
+          </div>
+        </div>
+        <div class="grp">
+          <label>Where are you in your journey?</label>
+          <div class="radio-grid">
+            <label><input type="radio" name="Stage" value="Pre-launch" required>Pre-launch / Idea-stage</label>
+            <label><input type="radio" name="Stage" value="Early-stage">Early-stage (0–2 yrs)</label>
+            <label><input type="radio" name="Stage" value="Growth">Growing (2–5 yrs)</label>
+            <label><input type="radio" name="Stage" value="Mature">Established (5+ yrs)</label>
+          </div>
+        </div>
+        <div class="grp">
+          <label>Where would you like to meet?</label>
+          <div class="radio-grid">
+            <label><input type="radio" name="Format" value="Calgary in-person" required>Calgary (in-person)</label>
+            <label><input type="radio" name="Format" value="Remote worldwide">Remote (worldwide)</label>
+          </div>
+        </div>
+        <div class="grp">
+          <label for="goal">What's the #1 outcome you want from this session? <span class="opt">(2–3 sentences)</span></label>
+          <textarea id="goal" name="Goal" required placeholder="The clearer you are, the better I can prepare. e.g. 'I want to fix our marketing leak.' 'I need an HR foundation built fast.'"></textarea>
+        </div>
+        <div class="grp">
+          <label for="blocker">Biggest blocker right now? <span class="opt">(optional)</span></label>
+          <textarea id="blocker" name="Blocker" placeholder="What's slowing you down most? Be honest, there's no penalty for it."></textarea>
+        </div>
+        <div class="submit-row">
+          <button type="submit" class="btn">Submit Application →</button>
+          <p class="legal">By submitting, you agree to be contacted by Ambition Edge. We never share your information.</p>
+        </div>
+      </form>
+    </div>
+
+    <!-- SUMMARY -->
+    <div class="summary">
+      <div class="summary-card">
+        <span class="tag">The Diagnostic · 90 minutes</span>
+        <h3>What's included</h3>
+        <p class="sub">Every session runs the full Audit phase, with real clarity during the session and a written plan you can use right away after.</p>
+        <div class="price-line">
+          <div class="num">CAD $750 <span style="font-size:.45em;text-decoration:line-through;opacity:.5;font-weight:300;margin-left:8px">$2,500</span></div>
+          <div class="lbl">Founding Client rate · limited to first 8 clients</div>
+        </div>
+        <ul class="check-list">
+          <li>Pre-session intake review</li>
+          <li>90-minute working session, not a sales call</li>
+          <li>Live diagnosis across people, strategy, marketing, CX</li>
+          <li>Written diagnostic report within 48 hours</li>
+          <li>30-day priority roadmap with owners attached</li>
+          <li>Session recording for your team</li>
+        </ul>
+      </div>
+      <div class="guarantee">
+        <div class="seal">✓</div>
+        <p><strong>Results from session one.</strong> If you leave without at least one clear, valuable insight you can act on right away, the session is refunded, no questions asked.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- TRUST -->
+<section class="trust">
+  <div class="wrap">
+    <div class="trust-grid">
+      <div class="trust-item"><div class="num">15+ yrs</div><div class="lbl">Strategy, HR, marketing, CX</div></div>
+      <div class="trust-item"><div class="num">Wharton · MIT</div><div class="lbl">M&amp;A and New Ventures training</div></div>
+      <div class="trust-item"><div class="num">$5M+</div><div class="lbl">Revenue impact delivered</div></div>
+      <div class="trust-item"><div class="num">90%</div><div class="lbl">NPS maintained at scale</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+  <div class="wrap faq-grid">
+    <div class="faq-side">
+      <span class="eyebrow">Before You Book</span>
+      <h2>Common questions.</h2>
+      <p>If your question isn't answered here, just email <a href="mailto:contactambitionedge@gmail.com">contactambitionedge@gmail.com</a> and you'll hear back from me personally.</p>
+    </div>
+    <div>
+      <details open>
+        <summary>Is one session really enough to get value?</summary>
+        <div>Yes. The Audit phase is built to give you clarity, priorities, and a real written plan within 90 minutes. Many clients put major changes into action that same week. The session stands on its own. If a deeper engagement makes sense, we'll talk about it, and if not, you still leave with a clear roadmap.</div>
+      </details>
+      <details>
+        <summary>How is this different from "business coaching"?</summary>
+        <div>Coaching mostly asks you questions and leaves the answers to you. Consulting brings you clear diagnoses, frameworks, and decisions. Ambition Edge delivers structured, evidence-based consulting through the A.R.I.F. Method™, with the warmth and personal accountability of a private practice.</div>
+      </details>
+      <details>
+        <summary>What if I'm pre-revenue or just starting?</summary>
+        <div>It's the perfect time to engage. The most expensive mistakes tend to happen in the first 12 months, whether that's the wrong brand, the wrong hires, the wrong offer, or the wrong positioning. A diagnostic at the foundation stage often saves the most money over the long term.</div>
+      </details>
+      <details>
+        <summary>Do you work outside Calgary?</summary>
+        <div>Yes. Around half of Ambition Edge engagements are with clients outside Calgary. Calgary clients have the option of meeting in person, and everyone else receives the same depth and quality of partnership remotely.</div>
+      </details>
+      <details>
+        <summary>What's the guarantee?</summary>
+        <div>If you leave the diagnostic without at least one clear, valuable insight you can act on right away, the session is refunded. No paperwork, no friction.</div>
+      </details>
+      <details>
+        <summary>How quickly can we meet?</summary>
+        <div>Most sessions are booked within 5 to 10 business days of your application. There are a limited number of slots each month, so it's worth applying early. You'll receive a calendar link within one business day.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <img class="logo" src="Ambition Edge Logo (2).png" alt="Ambition Edge" />
+        <p>A business transformation and performance consultancy partnering with service-based businesses worldwide. Calgary, Alberta · SAAAH Limited.</p>
+        <div class="foot-cta-row">
+          <a href="book.html" class="btn">Book a Session →</a>
+        </div>
+        <div class="foot-socials">
+          <a href="https://www.linkedin.com/in/sameera-abdullah-80aa6548/" target="_blank" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+          <a href="mailto:contactambitionedge@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="book.html">Book a Session</a></li>
+          <li><a href="home.html#method">The A.R.I.F. Method</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:contactambitionedge@gmail.com">contactambitionedge@gmail.com</a></li>
+          <li><a href="tel:+14037965389">+1 403-796-5389</a></li>
+          <li>Calgary, AB · Canada</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+          <li>© <span id="yr"></span> SAAAH Limited</li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="foot-disclosure">Ambition Edge is a registered trade name of SAAAH Limited (Federal Corporation 1456848-6). The A.R.I.F. Method™ is a trademark of SAAAH Limited.</p>
+
+    <div class="foot-bottom">
+      <div>© <span id="yr2"></span> Ambition Edge · All rights reserved.</div>
+      <div>Where ambition meets execution.</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  document.getElementById('yr2').textContent = new Date().getFullYear();
+
+  // Graceful image fallback
+  document.querySelectorAll('img').forEach(img => {
+    img.addEventListener('error', () => {
+      img.style.visibility = 'hidden';
+      if (img.parentElement) {
+        img.parentElement.style.background =
+          'linear-gradient(135deg,#0B3D2E 0%,#14513F 60%,#072920 100%)';
+      }
+    });
+  });
+</script>
+</body>
+</html>
