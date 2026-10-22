@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Speaking | Sameera Abdullah · Ambition Edge</title>
+<meta name="description" content="Book Sameera Abdullah, founder of Ambition Edge, for keynotes, workshops and panels on the people side of growth. Calgary-based, speaking across Canada and online." />
+<meta property="og:title" content="Book Sameera Abdullah to Speak · Ambition Edge" />
+<meta property="og:description" content="Keynotes, workshops and panels on the people side of growth, for founders, leadership teams and HR professionals." />
+
+<link rel="icon" type="image/png" href="https://ambitionedge.ca/ambition%20edge%20logo%20(2).png" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --forest:#0B3D2E;--forest-deep:#072920;--forest-soft:#14513F;
+    --ivory:#F8F5EE;--cream:#EFE9DA;
+    --gold:#C9A961;--gold-deep:#A8893F;--gold-soft:#E8D9B0;
+    --ink:#0F0F0F;--muted:#6B6B6B;
+    --line:rgba(11,61,46,0.08);--line-strong:rgba(11,61,46,0.18);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  section[id]{scroll-margin-top:100px}
+  body{font-family:'Inter',sans-serif;background:var(--ivory);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  h1,h2,h3,h4{font-family:'Fraunces',serif;font-weight:400;letter-spacing:-0.02em;line-height:1.05;color:var(--forest)}
+  h1{font-size:clamp(2.4rem,5.6vw,4.8rem);font-weight:300}
+  h2{font-size:clamp(1.9rem,3.8vw,3.2rem);font-weight:400}
+  h3{font-size:clamp(1.2rem,1.8vw,1.5rem);font-weight:500}
+  p{color:var(--muted);font-weight:400}
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%;display:block}
+  .wrap{max-width:1280px;margin:0 auto;padding:0 32px}
+  @media(max-width:640px){.wrap{padding:0 20px}}
+  .eyebrow{font-size:.78rem;font-weight:500;color:var(--gold-deep);text-transform:uppercase;letter-spacing:.18em;margin-bottom:20px;display:block}
+
+  /* NAV */
+  nav.top{position:sticky;top:0;z-index:50;padding:20px 0;background:rgba(248,245,238,.94);backdrop-filter:blur(20px);border-bottom:1px solid var(--line)}
+  nav.top .row{display:flex;align-items:center;justify-content:space-between;gap:24px}
+  .brand .logo{height:52px;width:auto;transition:opacity .2s}
+  .brand:hover .logo{opacity:.85}
+  .nav-links{display:flex;gap:36px;font-size:.93rem;color:var(--forest);font-weight:400;letter-spacing:.01em}
+  .nav-links a{padding:6px 0;transition:opacity .2s}
+  .nav-links a:hover{opacity:.6}
+  .nav-links a.active{color:var(--gold-deep);position:relative}
+  .nav-links a.active::after{content:'';position:absolute;bottom:-2px;left:0;right:0;height:1px;background:var(--gold)}
+  .btn{display:inline-flex;align-items:center;gap:8px;padding:11px 20px;background:var(--gold);color:var(--forest-deep);border-radius:6px;font-weight:500;font-size:.9rem;border:none;cursor:pointer;font-family:inherit;transition:all .2s ease;letter-spacing:.01em}
+  .btn:hover{background:var(--gold-deep);color:#fff;transform:translateY(-1px)}
+  .btn-ghost-light{background:transparent;color:var(--ivory);border:1px solid rgba(248,245,238,.35)}
+  .btn-ghost-light:hover{background:var(--ivory);color:var(--forest-deep)}
+  .btn-lg{padding:14px 26px;font-size:.95rem}
+  @media(max-width:880px){.nav-links{display:none}}
+  @media(max-width:520px){nav.top .btn{display:none}}
+
+  /* PAGE HEAD */
+  .page-head{position:relative;padding:120px 0 100px;overflow:hidden;background:var(--forest);color:#fff}
+  .page-head::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 85% 20%,rgba(201,169,97,.18),transparent 55%);pointer-events:none}
+  .head-grid{position:relative;display:grid;grid-template-columns:1.35fr 1fr;gap:64px;align-items:center}
+  @media(max-width:900px){.head-grid{grid-template-columns:1fr;gap:48px}}
+  .page-head .eyebrow{color:var(--gold);margin-bottom:24px}
+  .page-head h1{color:#fff;margin-bottom:24px}
+  .page-head h1 em{color:var(--gold);font-style:italic;font-weight:300}
+  .page-head p.lead{font-size:1.15rem;color:rgba(255,255,255,.85);max-width:620px;font-weight:300;line-height:1.65;margin-bottom:36px}
+  .head-ctas{display:flex;gap:14px;flex-wrap:wrap}
+  .portrait{position:relative;max-width:420px;justify-self:end;width:100%}
+  @media(max-width:900px){.portrait{justify-self:start;max-width:340px}}
+  .portrait img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:14px}
+  .portrait::after{content:'';position:absolute;inset:16px -16px -16px 16px;border:1px solid var(--gold);border-radius:14px;z-index:-1}
+  .portrait-wrap{position:relative;z-index:0}
+
+  /* PROOF STRIP */
+  .proof{background:var(--cream);border-bottom:1px solid var(--line)}
+  .proof-row{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+  @media(max-width:900px){.proof-row{grid-template-columns:1fr 1fr}}
+  .proof-item{padding:34px 28px;border-right:1px solid var(--line-strong)}
+  .proof-item:last-child{border-right:none}
+  @media(max-width:900px){.proof-item:nth-child(2){border-right:none}.proof-item:nth-child(-n+2){border-bottom:1px solid var(--line-strong)}}
+  .proof-item .k{font-family:'Fraunces',serif;font-size:1.25rem;color:var(--forest);line-height:1.25;margin-bottom:6px}
+  .proof-item .v{font-size:.86rem;color:var(--muted);line-height:1.5}
+
+  /* TALKS */
+  .talks{padding:120px 0}
+  .section-head{max-width:760px;margin-bottom:56px}
+  .section-head h2{margin-bottom:16px}
+  .section-head p{font-size:1.05rem;color:#4a4a4a;font-weight:300}
+  .talk-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+  @media(max-width:860px){.talk-grid{grid-template-columns:1fr}}
+  .talk{background:#fff;border:1px solid var(--line);border-radius:14px;padding:36px 34px;display:flex;flex-direction:column;transition:all .3s;position:relative}
+  .talk:hover{transform:translateY(-4px);box-shadow:0 30px 60px -24px rgba(11,61,46,.18);border-color:var(--gold-soft)}
+  .talk.signature{background:var(--forest);border-color:var(--gold);grid-column:1/-1}
+  .talk.signature h3,.talk.signature .talk-num{color:var(--ivory)}
+  .talk.signature p,.talk.signature li{color:rgba(248,245,238,.82)}
+  .talk.signature .tag{background:var(--gold);color:var(--forest-deep)}
+  .talk-num{font-family:'Fraunces',serif;font-size:.78rem;font-weight:500;color:var(--gold-deep);letter-spacing:.14em;margin-bottom:12px;text-transform:uppercase}
+  .talk.signature .talk-num{color:var(--gold)}
+  .talk h3{font-size:1.5rem;margin-bottom:14px;line-height:1.2}
+  .talk h3 .sub{display:block;font-size:1.05rem;font-style:italic;font-weight:300;color:var(--gold-deep);margin-top:6px}
+  .talk.signature h3 .sub{color:var(--gold)}
+  .talk > p{font-size:.95rem;line-height:1.65;margin-bottom:18px}
+  .talk ul{list-style:none;display:grid;gap:8px;margin-bottom:22px}
+  .talk li{font-size:.92rem;color:#4a4a4a;padding-left:18px;position:relative;line-height:1.5}
+  .talk li::before{content:'';position:absolute;left:0;top:.62em;width:7px;height:7px;border-radius:50%;background:var(--gold)}
+  .tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:auto}
+  .tag{font-size:.72rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;padding:5px 11px;border-radius:100px;background:var(--cream);color:var(--forest)}
+  .four{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:24px}
+  .four span{font-family:'Fraunces',serif;font-size:1.15rem;color:var(--ivory);text-align:center;padding:16px 6px;border:1px solid rgba(201,169,97,.45);border-radius:10px;background:rgba(248,245,238,.04)}
+  @media(max-width:420px){.four{grid-template-columns:1fr 1fr}}
+  .signature-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:40px}
+  @media(max-width:860px){.signature-grid{grid-template-columns:1fr;gap:8px}}
+
+  /* TESTIMONIAL */
+  .quote-sec{padding:110px 0;background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .quote{max-width:860px;margin:0 auto;text-align:center}
+  .quote .mark{font-family:'Fraunces',serif;font-size:5rem;line-height:.6;color:var(--gold);display:block;margin-bottom:12px}
+  .quote blockquote{font-family:'Fraunces',serif;font-size:clamp(1.35rem,2.4vw,1.9rem);font-weight:300;color:var(--forest);line-height:1.4;letter-spacing:-0.01em;margin-bottom:28px}
+  .quote cite{font-style:normal;font-size:.92rem;color:var(--muted)}
+  .quote cite strong{color:var(--forest);font-weight:600;display:block;margin-bottom:2px}
+
+  /* FORMATS */
+  .formats{padding:120px 0}
+  .format-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  @media(max-width:860px){.format-grid{grid-template-columns:1fr}}
+  .format{border-top:2px solid var(--gold);padding-top:24px}
+  .format h3{margin-bottom:10px}
+  .format p{font-size:.95rem;line-height:1.65}
+  .audiences{margin-top:56px;padding:32px 34px;background:var(--cream);border-radius:14px;display:flex;gap:24px;align-items:baseline;flex-wrap:wrap}
+  .audiences .eyebrow{margin:0}
+  .audiences p{color:var(--forest);font-size:1rem}
+
+  /* INVITE */
+  .invite{padding:130px 0;background:var(--forest-deep);color:var(--ivory);position:relative;overflow:hidden}
+  .invite::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 20% 30%,rgba(201,169,97,.14),transparent 60%);pointer-events:none}
+  .invite-grid{position:relative;display:grid;grid-template-columns:1.1fr 1fr;gap:64px;align-items:start}
+  @media(max-width:900px){.invite-grid{grid-template-columns:1fr;gap:40px}}
+  .invite .eyebrow{color:var(--gold)}
+  .invite h2{color:var(--ivory);margin-bottom:20px}
+  .invite h2 em{color:var(--gold);font-style:italic;font-weight:300}
+  .invite p.lead{color:rgba(248,245,238,.8);font-size:1.08rem;font-weight:300;margin-bottom:32px;max-width:520px}
+  .invite .email-line{margin-top:18px;font-size:.92rem;color:rgba(248,245,238,.65)}
+  .invite .email-line a{color:var(--gold);border-bottom:1px solid rgba(201,169,97,.4)}
+  .checklist{background:rgba(248,245,238,.05);border:1px solid rgba(248,245,238,.12);border-radius:14px;padding:34px}
+  .checklist h4{font-family:'Inter',sans-serif;color:var(--gold);font-size:.78rem;text-transform:uppercase;letter-spacing:.14em;margin-bottom:20px;font-weight:600}
+  .checklist ol{list-style:none;counter-reset:c;display:grid;gap:14px}
+  .checklist li{counter-increment:c;display:flex;gap:14px;color:rgba(248,245,238,.88);font-size:.98rem;line-height:1.5}
+  .checklist li::before{content:counter(c,decimal-leading-zero);font-family:'Fraunces',serif;color:var(--gold);font-size:.9rem;min-width:24px;padding-top:1px}
+  .checklist .note{margin-top:22px;font-size:.88rem;color:rgba(248,245,238,.6)}
+
+  /* FOOTER */
+  footer{background:var(--forest-deep);color:var(--ivory);padding:80px 0 30px;border-top:1px solid rgba(248,245,238,.1)}
+  .foot-top{display:grid;grid-template-columns:1.8fr 1fr 1fr 1fr;gap:48px;padding-bottom:60px;border-bottom:1px solid rgba(248,245,238,.12);margin-bottom:32px}
+  @media(max-width:880px){.foot-top{grid-template-columns:1fr 1fr;gap:36px}}
+  .foot-brand .logo{height:60px;width:auto;margin-bottom:24px}
+  .foot-brand p{color:rgba(248,245,238,.7);font-size:.92rem;max-width:320px;line-height:1.6;margin-bottom:24px;font-weight:300}
+  .foot-cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:24px}
+  .foot-socials{display:flex;gap:14px}
+  .foot-socials a{width:36px;height:36px;border-radius:50%;background:rgba(248,245,238,.08);display:grid;place-items:center;transition:all .25s;color:var(--ivory)}
+  .foot-socials a:hover{background:var(--gold);color:var(--forest-deep)}
+  .foot-socials svg{width:16px;height:16px}
+  footer h4{color:var(--gold);font-family:'Inter',sans-serif;font-size:.78rem;text-transform:uppercase;letter-spacing:.14em;margin-bottom:20px;font-weight:600}
+  footer ul{list-style:none}
+  footer li{padding:6px 0;color:rgba(248,245,238,.72);font-size:.92rem;font-weight:300}
+  footer a{color:rgba(248,245,238,.72);font-size:.92rem;transition:color .2s;font-weight:300}
+  footer a:hover{color:var(--gold)}
+  .foot-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;color:rgba(248,245,238,.5);font-size:.82rem;padding-top:14px}
+  .foot-disclosure{font-size:.78rem;color:rgba(248,245,238,.5);max-width:920px;line-height:1.6;margin-top:24px;font-weight:300}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="top">
+  <div class="wrap row">
+    <a href="/" class="brand">
+      <img class="logo" src="https://ambitionedge.ca/ambition%20edge%20logo%20(2).png" alt="Ambition Edge" />
+    </a>
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="/services">Services</a>
+      <a href="/#method">The Method</a>
+      <a href="/speaking" class="active">Speaking</a>
+      <a href="/book">Contact</a>
+    </div>
+    <a href="#invite" class="btn btn-lg">Invite Sameera to Speak</a>
+  </div>
+</nav>
+
+<!-- PAGE HEAD -->
+<section class="page-head">
+  <div class="wrap head-grid">
+    <div>
+      <span class="eyebrow">Speaking · Keynotes · Workshops</span>
+      <h1>The people side of growth, <em>made practical.</em></h1>
+      <p class="lead">Sameera Abdullah helps founders, leadership teams and HR professionals fix the people systems that quietly hold growth back. Her sessions are practical, interactive and built around tools your audience can use the next morning.</p>
+      <div class="head-ctas">
+        <a href="#invite" class="btn btn-lg">Invite Sameera to Speak →</a>
+        <a href="#talks" class="btn btn-lg btn-ghost-light">See the Talks</a>
+      </div>
+    </div>
+    <div class="portrait">
+      <div class="portrait-wrap">
+        <img src="https://ambitionedge.ca/founder.jpg" alt="Sameera Abdullah, founder of Ambition Edge" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROOF STRIP -->
+<section class="proof">
+  <div class="wrap proof-row">
+    <div class="proof-item">
+      <div class="k">Calgary Economic Development</div>
+      <div class="v">Speaker, Trade Accelerator Program cohorts</div>
+    </div>
+    <div class="proof-item">
+      <div class="k">10+ years</div>
+      <div class="v">In HR, service quality, marketing and operations leadership</div>
+    </div>
+    <div class="proof-item">
+      <div class="k">350+ employees</div>
+      <div class="v">HR function built from the ground up; turnover cut from 11% to 5%</div>
+    </div>
+    <div class="proof-item">
+      <div class="k">MBA (HR) · CHRA · CHRM</div>
+      <div class="v">Plus CMQ/OE, ASQ's quality and organizational excellence credential</div>
+    </div>
+  </div>
+</section>
+
+<!-- TALKS -->
+<section class="talks" id="talks">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Talks &amp; Topics</span>
+      <h2>Sessions built for rooms that are ready to grow.</h2>
+      <p>Each talk can run as a keynote or a hands-on workshop, and is tailored to your audience, industry and stage of growth.</p>
+    </div>
+
+    <div class="talk-grid">
+
+      <article class="talk signature">
+        <div class="talk-num">Signature talk</div>
+        <div class="signature-grid">
+          <div>
+            <h3>Going Global Without an HR Department<span class="sub">The Four Before You Go</span></h3>
+            <p>For founders preparing to take their business into new markets. Most expansion plans cover the market, the product and the money. The people side usually gets figured out on the fly, and that is where a lot of the cost hides. This session gives leaders a simple sequence for the people decisions to make before they go.</p>
+          </div>
+          <div>
+            <p style="color:var(--gold);font-size:.78rem;font-weight:600;text-transform:uppercase;letter-spacing:.14em;margin-bottom:14px">The four steps</p>
+            <div class="four">
+              <span>Define</span><span>Choose</span><span>Land</span><span>Keep</span>
+            </div>
+            <div class="tags"><span class="tag">Delivered at CED's Trade Accelerator Program</span></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="talk">
+        <div class="talk-num">Talk 02</div>
+        <h3>From People Problems to Customer Problems<span class="sub">Three systems growing service businesses need</span></h3>
+        <p>When customers feel the strain, the cause is usually inside the team. This session connects the two and gives leaders three systems to put in place.</p>
+        <ul>
+          <li>Role clarity, so everyone knows what they own</li>
+          <li>Manager routines that keep standards from slipping</li>
+          <li>Service-feedback follow-through, so complaints lead to fixes</li>
+          <li>One practical exercise attendees can take back to their teams</li>
+        </ul>
+        <div class="tags"><span class="tag">Service businesses</span><span class="tag">Leadership teams</span></div>
+      </article>
+
+      <article class="talk">
+        <div class="talk-num">Talk 03</div>
+        <h3>Scaling Without Chaos<span class="sub">The people systems to fix before you grow</span></h3>
+        <p>Growth exposes every gap in how a team is hired, managed and supported. This talk shows founders which people systems to put in order first, so growth adds capacity instead of chaos.</p>
+        <div class="tags"><span class="tag">Founders</span><span class="tag">Growing SMBs</span></div>
+      </article>
+
+      <article class="talk">
+        <div class="talk-num">Talk 04</div>
+        <h3>Turnover Isn't Just an HR Problem<span class="sub">It's a design problem</span></h3>
+        <p>People rarely leave for one reason. This session reframes turnover as a signal about how roles, managers and expectations are designed, and what leaders can change to keep their best people.</p>
+        <div class="tags"><span class="tag">Leaders</span><span class="tag">HR professionals</span></div>
+      </article>
+
+      <article class="talk">
+        <div class="talk-num">Talk 05</div>
+        <h3>Minimum Viable HR<span class="sub">What a growing team actually needs, and what can wait</span></h3>
+        <p>Small teams don't need a corporate HR department. They need the few essentials that prevent expensive mistakes. This session helps leaders separate the must-haves from the nice-to-haves.</p>
+        <div class="tags"><span class="tag">Startups</span><span class="tag">Founders</span></div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIAL -->
+<section class="quote-sec">
+  <div class="wrap">
+    <figure class="quote">
+      <span class="mark">“</span>
+      <blockquote>[Testimonial goes here. Send me the exact wording and it will appear in this space.]</blockquote>
+      <cite><strong>[Name]</strong>[Title, Company] · Trade Accelerator Program</cite>
+    </figure>
+  </div>
+</section>
+
+<!-- FORMATS -->
+<section class="formats">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Formats</span>
+      <h2>Flexible for your event.</h2>
+    </div>
+    <div class="format-grid">
+      <div class="format">
+        <h3>Keynote</h3>
+        <p>A focused, energizing talk for conferences, association meetings and leadership events, with clear takeaways for every person in the room.</p>
+      </div>
+      <div class="format">
+        <h3>Workshop</h3>
+        <p>A hands-on session where participants work through their own situation and leave with a practical plan, not just notes.</p>
+      </div>
+      <div class="format">
+        <h3>Panel &amp; Fireside</h3>
+        <p>An informed, candid voice on people strategy, HR for growing businesses, service quality and expansion.</p>
+      </div>
+    </div>
+    <div class="audiences">
+      <span class="eyebrow">Best for</span>
+      <p>Founders · Accelerator and incubator cohorts · Chambers and business associations · Leadership teams · HR professionals</p>
+    </div>
+    <div class="audiences" style="margin-top:16px">
+      <span class="eyebrow">Where</span>
+      <p>Based in Calgary · In person across Canada and internationally · Online</p>
+    </div>
+  </div>
+</section>
+
+<!-- INVITE -->
+<section class="invite" id="invite">
+  <div class="wrap invite-grid">
+    <div>
+      <span class="eyebrow">Invite Sameera to Speak</span>
+      <h2>Tell me about <em>your event.</em></h2>
+      <p class="lead">Send an email with the details of your event. I'll review it and get back to you to set up a time to talk it through.</p>
+      <a class="btn btn-lg" href="mailto:contactambitionedge@gmail.com?subject=Speaking%20Inquiry&amp;body=Hi%20Sameera%2C%0A%0AEvent%20name%3A%20%0ADate(s)%3A%20%0ALocation%20(in%20person%20or%20online)%3A%20%0AAudience%20(who%20and%20how%20many)%3A%20%0AFormat%20and%20length%3A%20%0ATopic%20of%20interest%3A%20%0ABudget%20or%20honorarium%3A%20%0A%0AAnything%20else%20I%20should%20know%3A%20%0A">Email Your Speaking Request →</a>
+      <p class="email-line">Or write directly to <a href="mailto:contactambitionedge@gmail.com?subject=Speaking%20Inquiry">contactambitionedge@gmail.com</a></p>
+    </div>
+    <div class="checklist">
+      <h4>What to include</h4>
+      <ol>
+        <li>Event name and date</li>
+        <li>Location, in person or online</li>
+        <li>Who's in the audience, and how many</li>
+        <li>Format and length you have in mind</li>
+        <li>The topic or challenge you'd like covered</li>
+        <li>Budget or honorarium</li>
+      </ol>
+      <p class="note">The email button opens a ready-made template with these questions.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <img class="logo" src="https://ambitionedge.ca/ambition%20edge%20logo%20(2).png" alt="Ambition Edge" />
+        <p>A business transformation and performance consultancy partnering with service-based businesses worldwide. Calgary, Alberta · SAAAH Limited.</p>
+        <div class="foot-cta-row">
+          <a href="/book" class="btn">Book a Session →</a>
+        </div>
+        <div class="foot-socials">
+          <a href="https://www.linkedin.com/in/sameera-abdullah/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+          <a href="mailto:contactambitionedge@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/services">Services</a></li>
+          <li><a href="/speaking">Speaking</a></li>
+          <li><a href="/book">Book a Session</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:contactambitionedge@gmail.com">contactambitionedge@gmail.com</a></li>
+          <li><a href="tel:+14037965389">+1 403-796-5389</a></li>
+          <li>Calgary, AB · Canada</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="/privacy">Privacy</a></li>
+          <li><a href="/terms">Terms</a></li>
+          <li>© <span id="yr"></span> SAAAH Limited</li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="foot-disclosure">Ambition Edge is a registered trade name of SAAAH Limited (Federal Corporation 1456848-6). The A.R.I.F. Method™ is a trademark of SAAAH Limited.</p>
+
+    <div class="foot-bottom">
+      <div>© <span id="yr2"></span> Ambition Edge · All rights reserved.</div>
+      <div>Where ambition meets execution.</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  document.getElementById('yr2').textContent = new Date().getFullYear();
+  document.querySelectorAll('img').forEach(img => {
+    img.addEventListener('error', () => {
+      img.style.visibility = 'hidden';
+      if (img.parentElement) {
+        img.parentElement.style.background = 'linear-gradient(135deg,#0B3D2E 0%,#14513F 60%,#072920 100%)';
+      }
+    });
+  });
+</script>
+</body>
+</html>
