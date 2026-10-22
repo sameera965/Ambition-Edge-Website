@@ -112,7 +112,12 @@
 
   /* TESTIMONIAL */
   .quote-sec{padding:110px 0;background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-  .quote{max-width:860px;margin:0 auto;text-align:center}
+  .quote-grid{display:grid;grid-template-columns:minmax(0,360px) 1fr;gap:72px;align-items:center;max-width:1080px}
+  @media(max-width:860px){.quote-grid{grid-template-columns:1fr;gap:40px;justify-items:center}}
+  .video-frame{width:100%;max-width:360px;border-radius:14px;overflow:hidden;background:var(--forest-deep);box-shadow:0 30px 60px -24px rgba(11,61,46,.35);outline:1px solid var(--gold-soft);outline-offset:8px}
+  .video-frame video{display:block;width:100%;aspect-ratio:9/16;object-fit:cover;background:var(--forest-deep)}
+  .quote{min-width:0}
+  @media(max-width:860px){.quote{text-align:center}}
   .quote .mark{font-family:'Fraunces',serif;font-size:5rem;line-height:.6;color:var(--gold);display:block;margin-bottom:12px}
   .quote blockquote{font-family:'Fraunces',serif;font-size:clamp(1.35rem,2.4vw,1.9rem);font-weight:300;color:var(--forest);line-height:1.4;letter-spacing:-0.01em;margin-bottom:28px}
   .quote cite{font-style:normal;font-size:.92rem;color:var(--muted)}
@@ -200,7 +205,7 @@
     </div>
     <div class="portrait">
       <div class="portrait-wrap">
-        <img src="https://ambitionedge.ca/founder.jpg" alt="Sameera Abdullah, founder of Ambition Edge" />
+        <img src="speaker-photo.jpg" alt="Sameera Abdullah, founder of Ambition Edge" />
       </div>
     </div>
   </div>
@@ -296,11 +301,17 @@
 
 <!-- TESTIMONIAL -->
 <section class="quote-sec">
-  <div class="wrap">
+  <div class="wrap quote-grid">
+    <div class="video-frame">
+      <video controls playsinline preload="metadata" poster="testimonial-poster.jpg">
+        <source src="testimonial.mp4" type="video/mp4" />
+      </video>
+    </div>
     <figure class="quote">
+      <span class="eyebrow">In their words</span>
       <span class="mark">“</span>
-      <blockquote>[Testimonial goes here. Send me the exact wording and it will appear in this space.]</blockquote>
-      <cite><strong>[Name]</strong>[Title, Company] · Trade Accelerator Program</cite>
+      <blockquote>[A short line from the video goes here.]</blockquote>
+      <cite><strong>[Name]</strong>[Title, Company] · Trade Accelerator Program attendee</cite>
     </figure>
   </div>
 </section>
